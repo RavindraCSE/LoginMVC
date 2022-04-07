@@ -1,0 +1,60 @@
+﻿@model LoginApplication.Models.UserLogin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post" action="/">
+        <table width="100%">
+            <tr>
+                <td>
+                    <label>User Id : </label>
+                    <input type="text" name="UserName1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password :</label>
+                    <input type="text" name="Password" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <button>Log In</button>
+                </td>
+            </tr>
+
+
+        </table>
+
+        @*<table width="100%">
+            <tr>
+                <td>
+                    <label>User Id : </label>
+                    @Html.TextBoxFor(e=>e.UserName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password :</label>
+                   @Html.TextBoxFor(e=>e.Password)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Log In</button>
+                </td>
+            </tr>
+
+
+        </table>*@
+    </form>
+</body>
+</html>
